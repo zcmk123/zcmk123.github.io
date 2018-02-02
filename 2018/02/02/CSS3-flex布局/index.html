@@ -3,15 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Bird&#39;s Cage</title>
+  <title>CSS3 flex布局 | Bird&#39;s Cage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Bird&#39;s Cage">
-<meta property="og:url" content="https://zcmk123.github.io/index.html">
+  <meta name="description" content="弹性盒子 display: flexflex为复合属性，且必须配合父元素display:flex使用 首先要了解的概念1、被设置display: flex的元素叫做容器2、容器内部的元素称为项目3、容器主轴(x轴) 默认情况下4、容器侧轴/交叉轴(y轴) 默认情况下 以下6个属性设置在项目(子元素)上:flex-grow: 放大比例(剩下空余区域按设置的比例填充)根据所设置的比例分配盒子所剩余的">
+<meta name="keywords" content="CSS3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3 flex布局">
+<meta property="og:url" content="https://zcmk123.github.io/2018/02/02/CSS3-flex布局/index.html">
 <meta property="og:site_name" content="Bird&#39;s Cage">
+<meta property="og:description" content="弹性盒子 display: flexflex为复合属性，且必须配合父元素display:flex使用 首先要了解的概念1、被设置display: flex的元素叫做容器2、容器内部的元素称为项目3、容器主轴(x轴) 默认情况下4、容器侧轴/交叉轴(y轴) 默认情况下 以下6个属性设置在项目(子元素)上:flex-grow: 放大比例(剩下空余区域按设置的比例填充)根据所设置的比例分配盒子所剩余的">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://zcmk123.github.io/2018/02/02/CSS3-flex布局/CSS3动画/css3.png">
+<meta property="og:updated_time" content="2018-02-02T02:28:05.204Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bird&#39;s Cage">
+<meta name="twitter:title" content="CSS3 flex布局">
+<meta name="twitter:description" content="弹性盒子 display: flexflex为复合属性，且必须配合父元素display:flex使用 首先要了解的概念1、被设置display: flex的元素叫做容器2、容器内部的元素称为项目3、容器主轴(x轴) 默认情况下4、容器侧轴/交叉轴(y轴) 默认情况下 以下6个属性设置在项目(子元素)上:flex-grow: 放大比例(剩下空余区域按设置的比例填充)根据所设置的比例分配盒子所剩余的">
+<meta name="twitter:image" content="https://zcmk123.github.io/2018/02/02/CSS3-flex布局/CSS3动画/css3.png">
   
     <link rel="alternate" href="/atom.xml" title="Bird&#39;s Cage" type="application/atom+xml">
   
@@ -64,9 +71,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-CSS3-flex布局" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-CSS3-flex布局" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/02/02/CSS3-flex布局/" class="article-date">
   <time datetime="2018-02-02T01:38:39.000Z" itemprop="datePublished">2018-02-02</time>
@@ -79,8 +84,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/02/CSS3-flex布局/">CSS3 flex布局</a>
+    <h1 class="article-title" itemprop="name">
+      CSS3 flex布局
     </h1>
   
 
@@ -141,123 +146,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-CSS3动画" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/31/CSS3动画/" class="article-date">
-  <time datetime="2018-01-31T14:19:58.000Z" itemprop="datePublished">2018-01-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/31/CSS3动画/">CSS3动画</a>
-    </h1>
+    <a href="/2018/01/31/CSS3动画/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CSS3动画</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2018/01/31/CSS3动画/css3.png" alt="CSS3-LOGO"></p>
-<h3 id="形状变化"><a href="#形状变化" class="headerlink" title="形状变化"></a>形状变化</h3><p>transform 可以实现元素的形状、角度、位置的变化</p>
-<h5 id="1、旋转"><a href="#1、旋转" class="headerlink" title="1、旋转"></a>1、旋转</h5><p><code>rotate()</code> 以x/y/z为轴进行旋转，默认为z</p>
-<p><code>rotateX()</code>, <code>rotateY()</code>, <code>rotateZ()</code>, <code>rotate3d(x,y,z, angle)</code><br>PS:  xxx3d可以开启GPU加速，动画会更流畅</p>
-<h5 id="2、缩放"><a href="#2、缩放" class="headerlink" title="2、缩放"></a>2、缩放</h5><p><code>scale()</code> 以x/y为轴进行缩放</p>
-<p><code>scale(x, y)</code> 接受两个值，如果第二参数未提供，则第二个参数使用第一个参数的值</p>
-<p><code>scalex()</code>, <code>scaley()</code>, <code>scalez()</code> 值是数字表示倍数，不加任何单位</p>
-<p><code>scale3d(sx,sy,sz)</code><br>PS:  xxx3d可以开启GPU加速，动画会更流畅</p>
-<h5 id="3、倾斜扭曲"><a href="#3、倾斜扭曲" class="headerlink" title="3、倾斜扭曲"></a>3、倾斜扭曲</h5><p><code>skew()</code> 对元素进行倾斜扭曲</p>
-<p><code>skew(x, y)</code> 接受两个值，第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0</p>
-<p><code>skewx()</code>, <code>skewy()</code></p>
-<h5 id="4、位移-常用"><a href="#4、位移-常用" class="headerlink" title="4、位移 (常用)"></a>4、位移 (常用)</h5><p><code>translate()</code>  可以移动距离,相对于自身位置。</p>
-<p><code>translate(x, [y])</code> y不写默认为0</p>
-<p><code>translatex()</code>, <code>translatey()</code>, <code>translatez()</code>, <code>translate3d(x, y, z)</code><br>PS:  xxx3d可以开启GPU加速，动画会更流畅</p>
-<h5 id="5、-变换原点"><a href="#5、-变换原点" class="headerlink" title="5、 变换原点"></a>5、 变换原点</h5><p>任何一个元素都有一个中心点，<br>默认情况下，其中心点是居于元素x轴和y轴的50%处，如图。<br><img src="/2018/01/31/CSS3动画/1.png" alt="transform-origin"></p>
-<p>取值有各种位置关键词/百分比<br>top = top center = center top<br>right = right center = center right<br>bottom = bottom center = center bottom<br>left = left center = center left</p>
-<hr>
-<h3 id="transition过渡动画"><a href="#transition过渡动画" class="headerlink" title="transition过渡动画"></a>transition过渡动画</h3><h5 id="1、transition属性"><a href="#1、transition属性" class="headerlink" title="1、transition属性"></a>1、transition属性</h5><p>transition  属性是css3的一个复合属性，主要包括以下几个子属性</p>
-<p><code>transition-property</code>:监听的属性</p>
-<p><code>transition-duration</code>:指定过渡所需要的时间</p>
-<p><code>transition-timing-function</code>:指定过渡函数</p>
-<p><code>transition-delay</code>:指定开始出现的延迟时间</p>
-<h5 id="2、transition-可以监听-参与过渡的-属性"><a href="#2、transition-可以监听-参与过渡的-属性" class="headerlink" title="2、transition 可以监听(参与过渡的)属性"></a>2、transition 可以监听(参与过渡的)属性</h5><p><img src="/2018/01/31/CSS3动画/2.png" alt=""></p>
-<h5 id="3、速率参数可以选择的值"><a href="#3、速率参数可以选择的值" class="headerlink" title="3、速率参数可以选择的值"></a>3、速率参数可以选择的值</h5><p><img src="/2018/01/31/CSS3动画/3.png" alt=""></p>
-<p>transition 简写:<br>transform: transition 监听属性(width/height等) 过渡时间(如:1s/1000ms) 过度函数名(linear/ease等) 开始出现延迟时间(如:1s/1000ms)</p>
-<hr>
-<h3 id="animation-动画"><a href="#animation-动画" class="headerlink" title="animation 动画"></a>animation 动画</h3><h5 id="1、动画关键帧-keyframe"><a href="#1、动画关键帧-keyframe" class="headerlink" title="1、动画关键帧 @keyframe"></a>1、动画关键帧 @keyframe</h5><p>animation 动画会按照keyframes 关键帧里面指定的帧状态而过渡执行。<br>0% - 100% 代表动画的时间过渡<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> demoMove&#123;</span><br><span class="line">0%&#123; <span class="attribute">background-color</span>:red;&#125;</span><br><span class="line">10%&#123; <span class="attribute">background-color</span>:green;&#125;</span><br><span class="line">20%&#123; <span class="attribute">background-color</span>:white;&#125;</span><br><span class="line">50%&#123; <span class="attribute">width</span>:<span class="number">200px</span>;&#125;</span><br><span class="line">100%&#123; <span class="attribute">height</span>:<span class="number">200px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>帧频里面如果只有 0% 和 100%两个关键帧，那么可以用 from to 代替</p>
-<h5 id="2、animation属性"><a href="#2、animation属性" class="headerlink" title="2、animation属性"></a>2、animation属性</h5><p>animation 属性为css3的复合属性，主要包括以下子属性</p>
-<p><code>animation-name</code>: 此属性为执行动画的 keyframe 名</p>
-<p><code>animation-duration</code>: 此属性为动画执行的时间</p>
-<p><code>animation-timing-function</code>: 指定过渡函数速率</p>
-<p><code>animation-delay</code>: 执行延迟时间</p>
-<p><code>animation-direction</code>: 属性主要用来设置动画播放方向<br>normal`    默认值。动画按正常播放<br>reverse    动画反向播放<br>alternate    动画在奇数次（1、3、5…）正向播放，在偶数次（2、4、6…）反向播放<br>alternate-reverse    动画在奇数次（1、3、5…）反向播放，在偶数次（2、4、6…）正向播放</p>
-<p><code>animation-iteration-count</code>: 属性主要用来定义动画的播放次数。<br>n 播放次数<br>infinite 无限次</p>
-<p><code>animation-play-state</code>: 属性主要用来控制元素动画的播放状态。<br>running 播放<br>paused  暂停</p>
-<p><code>animation-fill-mode</code>: 属性定义在动画开始之前和结束之后发生的操作<br>none: 默认值，表示动画将按预期进行和结束，在动画完成其最后一帧时，动画会反转到初始帧处<br>forwards: 表示动画在结束后继续应用最后的关键帧的位置<br>backwards: 会在向元素应用动画样式时迅速应用动画的初始帧（结合延迟1s来看）<br>both: 元素动画同时具有forwards和backwards效果</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://zcmk123.github.io/2018/01/31/CSS3动画/" data-id="cjd5b8x4800003gr18f34uy9n" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-搭建Hexo静态博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/31/搭建Hexo静态博客/" class="article-date">
-  <time datetime="2018-01-31T08:53:25.000Z" itemprop="datePublished">2018-01-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/31/搭建Hexo静态博客/">搭建Hexo静态博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="string">'test'</span>);</span><br><span class="line"><span class="keyword">var</span> a = [];</span><br><span class="line"><span class="keyword">var</span> b = ocument.getElementById(<span class="string">'abc'</span>);</span><br><span class="line">b.addClass = <span class="string">'av'</span>;</span><br></pre></td></tr></table></figure>
-<p>测试结束！！！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://zcmk123.github.io/2018/01/31/搭建Hexo静态博客/" data-id="cjd5b8x5d00033gr1v7owociv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         

@@ -5,22 +5,22 @@
   
   <title>CSS3动画 | Bird&#39;s Cage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="形状变化transform 可以实现元素的形状、角度、位置的变化 1、旋转rotate() 以x/y/z为轴进行旋转，默认为z rotateX(), rotateY(), rotateZ(), rotate3d(x,y,z, angle)PS:  xxx3d可以开启GPU加速，动画会更流畅 2、缩放scale() 以x/y为轴进行缩放scale(x, y) 接受两个值，如果第二参数未提供，则第二">
+  <meta name="description" content="形状变化transform 可以实现元素的形状、角度、位置的变化 1、旋转rotate() 以x/y/z为轴进行旋转，默认为z rotateX(), rotateY(), rotateZ(), rotate3d(x,y,z, angle)PS:  xxx3d可以开启GPU加速，动画会更流畅 2、缩放scale() 以x/y为轴进行缩放 scale(x, y) 接受两个值，如果第二参数未提供，则第">
 <meta name="keywords" content="CSS3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS3动画">
 <meta property="og:url" content="https://zcmk123.github.io/2018/01/31/CSS3动画/index.html">
 <meta property="og:site_name" content="Bird&#39;s Cage">
-<meta property="og:description" content="形状变化transform 可以实现元素的形状、角度、位置的变化 1、旋转rotate() 以x/y/z为轴进行旋转，默认为z rotateX(), rotateY(), rotateZ(), rotate3d(x,y,z, angle)PS:  xxx3d可以开启GPU加速，动画会更流畅 2、缩放scale() 以x/y为轴进行缩放scale(x, y) 接受两个值，如果第二参数未提供，则第二">
+<meta property="og:description" content="形状变化transform 可以实现元素的形状、角度、位置的变化 1、旋转rotate() 以x/y/z为轴进行旋转，默认为z rotateX(), rotateY(), rotateZ(), rotate3d(x,y,z, angle)PS:  xxx3d可以开启GPU加速，动画会更流畅 2、缩放scale() 以x/y为轴进行缩放 scale(x, y) 接受两个值，如果第二参数未提供，则第">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/css3.png">
 <meta property="og:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/1.png">
 <meta property="og:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/2.png">
 <meta property="og:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/3.png">
-<meta property="og:updated_time" content="2018-02-02T01:35:20.816Z">
+<meta property="og:updated_time" content="2018-02-02T01:44:18.954Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS3动画">
-<meta name="twitter:description" content="形状变化transform 可以实现元素的形状、角度、位置的变化 1、旋转rotate() 以x/y/z为轴进行旋转，默认为z rotateX(), rotateY(), rotateZ(), rotate3d(x,y,z, angle)PS:  xxx3d可以开启GPU加速，动画会更流畅 2、缩放scale() 以x/y为轴进行缩放scale(x, y) 接受两个值，如果第二参数未提供，则第二">
+<meta name="twitter:description" content="形状变化transform 可以实现元素的形状、角度、位置的变化 1、旋转rotate() 以x/y/z为轴进行旋转，默认为z rotateX(), rotateY(), rotateZ(), rotate3d(x,y,z, angle)PS:  xxx3d可以开启GPU加速，动画会更流畅 2、缩放scale() 以x/y为轴进行缩放 scale(x, y) 接受两个值，如果第二参数未提供，则第">
 <meta name="twitter:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/css3.png">
   
     <link rel="alternate" href="/atom.xml" title="Bird&#39;s Cage" type="application/atom+xml">
@@ -100,9 +100,16 @@
 <h3 id="形状变化"><a href="#形状变化" class="headerlink" title="形状变化"></a>形状变化</h3><p>transform 可以实现元素的形状、角度、位置的变化</p>
 <h5 id="1、旋转"><a href="#1、旋转" class="headerlink" title="1、旋转"></a>1、旋转</h5><p><code>rotate()</code> 以x/y/z为轴进行旋转，默认为z</p>
 <p><code>rotateX()</code>, <code>rotateY()</code>, <code>rotateZ()</code>, <code>rotate3d(x,y,z, angle)</code><br>PS:  xxx3d可以开启GPU加速，动画会更流畅</p>
-<h5 id="2、缩放"><a href="#2、缩放" class="headerlink" title="2、缩放"></a>2、缩放</h5><p><code>scale()</code> 以x/y为轴进行缩放<br><code>scale(x, y)</code> 接受两个值，如果第二参数未提供，则第二个参数使用第一个参数的值<br><code>scalex()</code>, <code>scaley()</code>, <code>scalez()</code> 值是数字表示倍数，不加任何单位<br><code>scale3d(sx,sy,sz)</code><br>PS:  xxx3d可以开启GPU加速，动画会更流畅</p>
-<h5 id="3、倾斜扭曲"><a href="#3、倾斜扭曲" class="headerlink" title="3、倾斜扭曲"></a>3、倾斜扭曲</h5><p><code>skew()</code> 对元素进行倾斜扭曲<br><code>skew(x, y)</code> 接受两个值，第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0<br><code>skewx()</code>, <code>skewy()</code></p>
-<h5 id="4、位移-常用"><a href="#4、位移-常用" class="headerlink" title="4、位移 (常用)"></a>4、位移 (常用)</h5><p><code>translate()</code>  可以移动距离,相对于自身位置。<br><code>translate(x, [y])</code> y不写默认为0<br><code>translatex()</code>, <code>translatey()</code>, <code>translatez()</code>, <code>translate3d(x, y, z)</code><br>PS:  xxx3d可以开启GPU加速，动画会更流畅</p>
+<h5 id="2、缩放"><a href="#2、缩放" class="headerlink" title="2、缩放"></a>2、缩放</h5><p><code>scale()</code> 以x/y为轴进行缩放</p>
+<p><code>scale(x, y)</code> 接受两个值，如果第二参数未提供，则第二个参数使用第一个参数的值</p>
+<p><code>scalex()</code>, <code>scaley()</code>, <code>scalez()</code> 值是数字表示倍数，不加任何单位</p>
+<p><code>scale3d(sx,sy,sz)</code><br>PS:  xxx3d可以开启GPU加速，动画会更流畅</p>
+<h5 id="3、倾斜扭曲"><a href="#3、倾斜扭曲" class="headerlink" title="3、倾斜扭曲"></a>3、倾斜扭曲</h5><p><code>skew()</code> 对元素进行倾斜扭曲</p>
+<p><code>skew(x, y)</code> 接受两个值，第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0</p>
+<p><code>skewx()</code>, <code>skewy()</code></p>
+<h5 id="4、位移-常用"><a href="#4、位移-常用" class="headerlink" title="4、位移 (常用)"></a>4、位移 (常用)</h5><p><code>translate()</code>  可以移动距离,相对于自身位置。</p>
+<p><code>translate(x, [y])</code> y不写默认为0</p>
+<p><code>translatex()</code>, <code>translatey()</code>, <code>translatez()</code>, <code>translate3d(x, y, z)</code><br>PS:  xxx3d可以开启GPU加速，动画会更流畅</p>
 <h5 id="5、-变换原点"><a href="#5、-变换原点" class="headerlink" title="5、 变换原点"></a>5、 变换原点</h5><p>任何一个元素都有一个中心点，<br>默认情况下，其中心点是居于元素x轴和y轴的50%处，如图。<br><img src="/2018/01/31/CSS3动画/1.png" alt="transform-origin"></p>
 <p>取值有各种位置关键词/百分比<br>top = top center = center top<br>right = right center = center right<br>bottom = bottom center = center bottom<br>left = left center = center left</p>
 <hr>
@@ -130,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zcmk123.github.io/2018/01/31/CSS3动画/" data-id="cjd59dljg0000kwr1l2f433o1" class="article-share-link">Share</a>
+      <a data-url="https://zcmk123.github.io/2018/01/31/CSS3动画/" data-id="cjd5b8x4800003gr18f34uy9n" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
@@ -140,6 +147,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2018/02/02/CSS3-flex布局/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          CSS3 flex布局
+        
+      </div>
+    </a>
   
   
     <a href="/2018/01/31/搭建Hexo静态博客/" id="article-nav-older" class="article-nav-link-wrap">
@@ -182,7 +198,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
     </div>
   </div>
 
@@ -193,6 +209,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/02/02/CSS3-flex布局/">CSS3 flex布局</a>
+          </li>
         
           <li>
             <a href="/2018/01/31/CSS3动画/">CSS3动画</a>
