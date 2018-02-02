@@ -15,7 +15,9 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/css3.png">
 <meta property="og:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/1.png">
-<meta property="og:updated_time" content="2018-01-31T14:43:19.249Z">
+<meta property="og:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/2.png">
+<meta property="og:image" content="https://zcmk123.github.io/2018/01/31/CSS3动画/3.png">
+<meta property="og:updated_time" content="2018-02-02T01:35:20.816Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS3动画">
 <meta name="twitter:description" content="形状变化transform 可以实现元素的形状、角度、位置的变化 1、旋转rotate() 以x/y/z为轴进行旋转，默认为z rotateX(), rotateY(), rotateZ(), rotate3d(x,y,z, angle)PS:  xxx3d可以开启GPU加速，动画会更流畅 2、缩放scale() 以x/y为轴进行缩放scale(x, y) 接受两个值，如果第二参数未提供，则第二">
@@ -105,15 +107,30 @@
 <p>取值有各种位置关键词/百分比<br>top = top center = center top<br>right = right center = center right<br>bottom = bottom center = center bottom<br>left = left center = center left</p>
 <hr>
 <h3 id="transition过渡动画"><a href="#transition过渡动画" class="headerlink" title="transition过渡动画"></a>transition过渡动画</h3><h5 id="1、transition属性"><a href="#1、transition属性" class="headerlink" title="1、transition属性"></a>1、transition属性</h5><p>transition  属性是css3的一个复合属性，主要包括以下几个子属性</p>
-<p>transition-property:指定过渡或动态模拟的css属性</p>
-<p>transition-duration:指定过渡所需要的时间</p>
-<p>transition-timing-function:指定过渡函数</p>
-<p>transition-delay:指定开始出现的延迟时间</p>
+<p><code>transition-property</code>:监听的属性</p>
+<p><code>transition-duration</code>:指定过渡所需要的时间</p>
+<p><code>transition-timing-function</code>:指定过渡函数</p>
+<p><code>transition-delay</code>:指定开始出现的延迟时间</p>
+<h5 id="2、transition-可以监听-参与过渡的-属性"><a href="#2、transition-可以监听-参与过渡的-属性" class="headerlink" title="2、transition 可以监听(参与过渡的)属性"></a>2、transition 可以监听(参与过渡的)属性</h5><p><img src="/2018/01/31/CSS3动画/2.png" alt=""></p>
+<h5 id="3、速率参数可以选择的值"><a href="#3、速率参数可以选择的值" class="headerlink" title="3、速率参数可以选择的值"></a>3、速率参数可以选择的值</h5><p><img src="/2018/01/31/CSS3动画/3.png" alt=""></p>
+<p>transition 简写:<br>transform: transition 监听属性(width/height等) 过渡时间(如:1s/1000ms) 过度函数名(linear/ease等) 开始出现延迟时间(如:1s/1000ms)</p>
+<hr>
+<h3 id="animation-动画"><a href="#animation-动画" class="headerlink" title="animation 动画"></a>animation 动画</h3><h5 id="1、动画关键帧-keyframe"><a href="#1、动画关键帧-keyframe" class="headerlink" title="1、动画关键帧 @keyframe"></a>1、动画关键帧 @keyframe</h5><p>animation 动画会按照keyframes 关键帧里面指定的帧状态而过渡执行。<br>0% - 100% 代表动画的时间过渡<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> demoMove&#123;</span><br><span class="line">0%&#123; <span class="attribute">background-color</span>:red;&#125;</span><br><span class="line">10%&#123; <span class="attribute">background-color</span>:green;&#125;</span><br><span class="line">20%&#123; <span class="attribute">background-color</span>:white;&#125;</span><br><span class="line">50%&#123; <span class="attribute">width</span>:<span class="number">200px</span>;&#125;</span><br><span class="line">100%&#123; <span class="attribute">height</span>:<span class="number">200px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>帧频里面如果只有 0% 和 100%两个关键帧，那么可以用 from to 代替</p>
+<h5 id="2、animation属性"><a href="#2、animation属性" class="headerlink" title="2、animation属性"></a>2、animation属性</h5><p>animation 属性为css3的复合属性，主要包括以下子属性</p>
+<p><code>animation-name</code>: 此属性为执行动画的 keyframe 名</p>
+<p><code>animation-duration</code>: 此属性为动画执行的时间</p>
+<p><code>animation-timing-function</code>: 指定过渡函数速率</p>
+<p><code>animation-delay</code>: 执行延迟时间</p>
+<p><code>animation-direction</code>: 属性主要用来设置动画播放方向<br>normal`    默认值。动画按正常播放<br>reverse    动画反向播放<br>alternate    动画在奇数次（1、3、5…）正向播放，在偶数次（2、4、6…）反向播放<br>alternate-reverse    动画在奇数次（1、3、5…）反向播放，在偶数次（2、4、6…）正向播放</p>
+<p><code>animation-iteration-count</code>: 属性主要用来定义动画的播放次数。<br>n 播放次数<br>infinite 无限次</p>
+<p><code>animation-play-state</code>: 属性主要用来控制元素动画的播放状态。<br>running 播放<br>paused  暂停</p>
+<p><code>animation-fill-mode</code>: 属性定义在动画开始之前和结束之后发生的操作<br>none: 默认值，表示动画将按预期进行和结束，在动画完成其最后一帧时，动画会反转到初始帧处<br>forwards: 表示动画在结束后继续应用最后的关键帧的位置<br>backwards: 会在向元素应用动画样式时迅速应用动画的初始帧（结合延迟1s来看）<br>both: 元素动画同时具有forwards和backwards效果</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zcmk123.github.io/2018/01/31/CSS3动画/" data-id="cjd3rs0mw000078r19jz7sgdc" class="article-share-link">Share</a>
+      <a data-url="https://zcmk123.github.io/2018/01/31/CSS3动画/" data-id="cjd59dljg0000kwr1l2f433o1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
