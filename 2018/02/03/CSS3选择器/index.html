@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>CSS3选择器 | Bird&#39;s Cage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="属性选择器element[attr^=&amp;quot;val&amp;quot;]{...}选择匹配元素element, 且E元素定义了属性att, 其属性值以val开头的任何字符串 element[att$=“val”]{…}选择匹配元素element, 且element元素定义了属性att, 其属性值以val结尾的任何字符串 element[att*=“val”]{…}选择匹配元素element, 且e">
+<meta name="keywords" content="CSS3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3选择器">
+<meta property="og:url" content="https://zcmk123.github.io/2018/02/03/CSS3选择器/index.html">
+<meta property="og:site_name" content="Bird&#39;s Cage">
+<meta property="og:description" content="属性选择器element[attr^=&amp;quot;val&amp;quot;]{...}选择匹配元素element, 且E元素定义了属性att, 其属性值以val开头的任何字符串 element[att$=“val”]{…}选择匹配元素element, 且element元素定义了属性att, 其属性值以val结尾的任何字符串 element[att*=“val”]{…}选择匹配元素element, 且e">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://zcmk123.github.io/2018/02/03/CSS3选择器/css3.png">
+<meta property="og:updated_time" content="2018-02-03T06:53:48.543Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS3选择器">
+<meta name="twitter:description" content="属性选择器element[attr^=&amp;quot;val&amp;quot;]{...}选择匹配元素element, 且E元素定义了属性att, 其属性值以val开头的任何字符串 element[att$=“val”]{…}选择匹配元素element, 且element元素定义了属性att, 其属性值以val结尾的任何字符串 element[att*=“val”]{…}选择匹配元素element, 且e">
+<meta name="twitter:image" content="https://zcmk123.github.io/2018/02/03/CSS3选择器/css3.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Bird&#39;s Cage" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Bird&#39;s Cage</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Deal With It</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zcmk123.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-CSS3选择器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/03/CSS3选择器/" class="article-date">
+  <time datetime="2018-02-03T03:17:04.000Z" itemprop="datePublished">2018-02-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS3选择器
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/2018/02/03/CSS3选择器/css3.png" alt=""></p>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><p><code>element[attr^=&quot;val&quot;]{...}</code><br>选择匹配元素element, 且E元素定义了属性att, 其属性值以val<code>开头</code>的任何字符串</p>
+<p><code>element[att$=“val”]{…}</code><br>选择匹配元素element, 且element元素定义了属性att, 其属性值以val<code>结尾</code>的任何字符串</p>
+<p><code>element[att*=“val”]{…}</code><br>选择匹配元素element, 且element元素定义了属性att, 其属性值任意位置出现了“val”。即属性值包含了“val”，位置不限</p>
+<hr>
+<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><h5 id="1、-root-根标签选择器"><a href="#1、-root-根标签选择器" class="headerlink" title="1、 :root 根标签选择器"></a>1、 :root 根标签选择器</h5><p>“:root”选择器等同于<html>元素，简单点说：</html></p>
+<p>:root{background:orange}<br>html{background:orange}<br>得到的效果等同<br>建议使用:root（xml等）</p>
+<h5 id="2、-not-否定选择器"><a href="#2、-not-否定选择器" class="headerlink" title="2、 :not 否定选择器"></a>2、 :not 否定选择器</h5><p>用法和jQuery 中的not类似，可以排除某些特定条件的元素<br>div:not([class=“demo”]){<br>    background-color:red;<br>}<br>意思为除了class为demo的div以外，所有的div的背景颜色都变红</p>
+<h5 id="3、-empty-空标签选择器"><a href="#3、-empty-空标签选择器" class="headerlink" title="3、 empty 空标签选择器"></a>3、 empty 空标签选择器</h5><p>用来选择没有内容的元素、不在文档树中的元素，这里的没有内容指的是一点内容都没有，哪怕是一个空格</p>
+<h5 id="4、-target-目标元素选择器"><a href="#4、-target-目标元素选择器" class="headerlink" title="4、 target 目标元素选择器"></a>4、 target 目标元素选择器</h5><p>用来匹配被location.hash 选中的元素(即<code>锚点元素</code>)<br>选择器可用于选取当前活动的目标元素</p>
+<h5 id="5、-xxx-child"><a href="#5、-xxx-child" class="headerlink" title="5、 xxx-child"></a>5、 xxx-child</h5><p><code>:first-child</code> 第一个子元素</p>
+<p><code>:last-child</code> 最后一个子元素</p>
+<p><code>:nth-child(){}</code> 第xxx个子元素，n代表变量自然数</p>
+<p><code>:nth-last-child(){}</code>  从后往前数</p>
+<h5 id="6、-xxx-of-type"><a href="#6、-xxx-of-type" class="headerlink" title="6、 xxx-of-type"></a>6、 xxx-of-type</h5><p><code>:first-of-type</code> 第一个子元素</p>
+<p><code>:last-of-type</code> 最后一个子元素</p>
+<p><code>:nth-of-type(){}</code> 第xxx个子元素，n代表变量自然数</p>
+<p><code>:nth-last-of-type(){}</code>  从后往前数</p>
+<p>此种选择器，限制了类型，即在所修饰元素的类型下选择特定位置的元素</p>
+<h5 id="7、-only-xxx"><a href="#7、-only-xxx" class="headerlink" title="7、 only-xxx"></a>7、 only-xxx</h5><p><code>:only-child</code>  唯一子元素选择器<br>选择是独生子的子元素，即该子元素不能有兄弟元素，它的父元素只有他一个直接子元素。</p>
+<p>注意：选择的元素是独生子子元素，而非有唯一子元素的父元素。</p>
+<p><code>:only-of-type</code><br>如果要选择第某类特定的子元素(p) 在兄弟节点中是此类元素唯一个的话 就需要用到这个属性了</p>
+<h5 id="8、-enable-disabled"><a href="#8、-enable-disabled" class="headerlink" title="8、 enable/disabled"></a>8、 enable/disabled</h5><p><code>:enabled</code>  可用的元素</p>
+<p><code>:disabled</code> 不可用的元素</p>
+<p>在web的表单中，有些表单元素有可用（“enabled”）和不可用（“disabled”）状态，比如输入框，密码框，复选框等。在默认情况下，这些表单元素都处在可用状态。那么我们可以通过伪类选择器 enabled 进行选择，disabled则相反。</p>
+<h5 id="9、-checked"><a href="#9、-checked" class="headerlink" title="9、 checked"></a>9、 checked</h5><p><code>:checked</code><br>选择框(radio/checkbox)的被选中状态</p>
+<p>注：checkbox, radio 的一些默认状态不可用属性进行改变，如边框颜色</p>
+<h5 id="10、-read-xxx"><a href="#10、-read-xxx" class="headerlink" title="10、 read-xxx"></a>10、 read-xxx</h5><p><code>:read-only</code>  选中只读的元素</p>
+<input type="“text”" readonly="“readonly”/">
+
+<p><code>:read-write</code> 选中非只读的元素</p>
+<input type="“text”/">
+
+<hr>
+<h3 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h3><p>伪元素的效果是需要通过添加一个实际的元素才能达到的</p>
+<p><code>::first-letter</code><br>选择某个元素的文字首字母，并设置其样式</p>
+<p><code>::first-line</code><br>选择某个元素的文字首行，并设置其样式</p>
+<p><code>::before</code><br>在元素之前增加一个伪元素</p>
+<p><code>::after</code><br>在元素之后增加一个伪元素</p>
+<p><code>::selection</code><br>selection选择器是用来匹配突出显示的文本（用鼠标选择文本的时候）。浏览器默认情况下，用鼠标选择网页文本是以“蓝色的北京，白色的字体”显示的</p>
+<hr>
+<h3 id="条件选择器"><a href="#条件选择器" class="headerlink" title="条件选择器"></a>条件选择器</h3><p>E <code>&gt;</code> F  an F element child of an E element<br>直接子元素</p>
+<p>E <code>+</code> F an F element immediately preceded by an E element </p>
+<p>后面的紧挨着的兄弟节点</p>
+<p>E <code>~</code> F an F element preceded by an E element<br>后面的兄弟节点</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zcmk123.github.io/2018/02/03/CSS3选择器/" data-id="cjd706a2w0001qwr1npacnztp" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/02/CSS3-flex布局/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CSS3 flex布局</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CSS3/" style="font-size: 10px;">CSS3</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/02/03/CSS3选择器/">CSS3选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/02/CSS3-flex布局/">CSS3 flex布局</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/31/CSS3动画/">CSS3动画</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/31/搭建Hexo静态博客/">搭建Hexo静态博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      &copy; 2018 DoubleBird<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	  <span id="busuanzi_container_site_uv">
+		本站访客数<span id="busuanzi_value_site_uv"></span>人次
+	  </span>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
