@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>CSS3 3D动画 | Bird&#39;s Cage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="关于3D动画的相关属性1、transform-styletransform-styleflat: 默认，子元素将不保留其 3D 位置 preserve-3d: 子元素将保留其 3D 位置 PS:① transform-style 属性需要设置在父元素中, 高于任何嵌套的变形元素② 设置了transform-style: preserve-3d的元素，就不能防止子元素溢出设置overflow: hi">
+<meta name="keywords" content="CSS3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3 3D动画">
+<meta property="og:url" content="https://zcmk123.github.io/2018/02/05/CSS3-3D动画/index.html">
+<meta property="og:site_name" content="Bird&#39;s Cage">
+<meta property="og:description" content="关于3D动画的相关属性1、transform-styletransform-styleflat: 默认，子元素将不保留其 3D 位置 preserve-3d: 子元素将保留其 3D 位置 PS:① transform-style 属性需要设置在父元素中, 高于任何嵌套的变形元素② 设置了transform-style: preserve-3d的元素，就不能防止子元素溢出设置overflow: hi">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-05T01:35:05.894Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS3 3D动画">
+<meta name="twitter:description" content="关于3D动画的相关属性1、transform-styletransform-styleflat: 默认，子元素将不保留其 3D 位置 preserve-3d: 子元素将保留其 3D 位置 PS:① transform-style 属性需要设置在父元素中, 高于任何嵌套的变形元素② 设置了transform-style: preserve-3d的元素，就不能防止子元素溢出设置overflow: hi">
+  
+    <link rel="alternate" href="/atom.xml" title="Bird&#39;s Cage" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Bird&#39;s Cage</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Deal With It</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zcmk123.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-CSS3-3D动画" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/05/CSS3-3D动画/" class="article-date">
+  <time datetime="2018-02-05T01:12:06.000Z" itemprop="datePublished">2018-02-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS3 3D动画
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="关于3D动画的相关属性"><a href="#关于3D动画的相关属性" class="headerlink" title="关于3D动画的相关属性"></a>关于3D动画的相关属性</h3><h5 id="1、transform-style"><a href="#1、transform-style" class="headerlink" title="1、transform-style"></a>1、transform-style</h5><p><code>transform-style</code><br><code>flat</code>: 默认，子元素将不保留其 3D 位置</p>
+<p><code>preserve-3d</code>: 子元素将保留其 3D 位置</p>
+<p>PS:<br>① transform-style 属性需要设置在父元素中, 高于任何嵌套的变形元素<br>② 设置了transform-style: preserve-3d的元素，就不能防止子元素溢出设置overflow: hidden; 否则会导致preserve-3d失效</p>
+<h5 id="2、perspective-景深"><a href="#2、perspective-景深" class="headerlink" title="2、perspective 景深"></a>2、perspective 景深</h5><p>(设置了景深才能看到3D效果)<br>可以简单的把perspective理解成人距离显示器的距离<br>此值越大的效果越差 越小效果越好<br>假设你距离100米和1米的距离去看一个边长一米的正方体<br><code>重点记住perspective的值要大于3d物体的值</code></p>
+<p>perspective: 600px ;默认值none<br>物体距离人眼的距离是600px;</p>
+<p>PS: 在3D变形中，除了<code>perspective属性可以激活一个3D空间</code>之外，在<code>3D变形的函数中的perspective()也可以激活3D空间</code>。他们不同的地方是:perspective用在舞台元素上（变形元素们的共同父元素）;perspective()就是用在当前变形元素上，并且可以与其他的transform函数一起使用。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">HTML结构</span></span><br><span class="line"><span class="comment">&lt;div class="stage"&gt;</span></span><br><span class="line"><span class="comment">    &lt;div class="box"&gt;&lt;/box&gt;</span></span><br><span class="line"><span class="comment">&lt;/div&gt;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> <span class="selector-class">.stage</span> &#123;</span><br><span class="line">     <span class="attribute">perspective</span>: <span class="number">600px</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="selector-class">.stage</span> <span class="selector-class">.box</span> &#123;</span><br><span class="line">     <span class="attribute">transform</span>: <span class="built_in">perspective</span>(600px);</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="comment">/* </span></span><br><span class="line"><span class="comment"> 当有多个变形元素时，第一种只有一个透视点，第二种每一个变形元素都有一个透视点</span></span><br><span class="line"><span class="comment">  */</span></span><br></pre></td></tr></table></figure>
+<h5 id="3、backface-visibility-背面可见性"><a href="#3、backface-visibility-背面可见性" class="headerlink" title="3、backface-visibility 背面可见性"></a>3、backface-visibility 背面可见性</h5><p>在元素运动过程中，能否展示元素的背面</p>
+<p><code>visible</code>: 可见</p>
+<p><code>hidden</code>: 隐藏</p>
+<hr>
+<h3 id="使用CSS3-3D动画时要注意的几点"><a href="#使用CSS3-3D动画时要注意的几点" class="headerlink" title="使用CSS3 3D动画时要注意的几点"></a>使用CSS3 3D动画时要注意的几点</h3><h5 id="1、3D旋转"><a href="#1、3D旋转" class="headerlink" title="1、3D旋转"></a>1、3D旋转</h5><p><code>3D变换 元素转，元素的坐标轴也在跟着转</code></p>
+<p>两个相同的元素, 其中一个设置了rotateY(180deg), 然后同时设置translateZ(100px)；这时, 他们在空间的距离是200px, 而不是0;</p>
+<h5 id="2、CSS3动画性能优化"><a href="#2、CSS3动画性能优化" class="headerlink" title="2、CSS3动画性能优化"></a>2、CSS3动画性能优化</h5><p><code>① 尽可能多的利用硬件能力，如使用3D变形来开启GPU加速</code><br>使用带有3d的transform属性: 如tanslate3d/rotate3d/scale3d等</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">translate3d</span>(0, 0, 0);</span><br><span class="line"><span class="selector-tag">-moz-transform</span>: <span class="selector-tag">translate3d</span>(0, 0, 0);</span><br><span class="line"><span class="selector-tag">-ms-transform</span>: <span class="selector-tag">translate3d</span>(0, 0, 0);</span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translate3d</span>(0, 0, 0);</span><br></pre></td></tr></table></figure>
+<p><code>② 如动画过程有闪烁（通常发生在动画开始的时候），可以尝试下面的Hack</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">-webkit-backface-visibility</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="selector-tag">-moz-backface-visibility</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="selector-tag">-ms-backface-visibility</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="selector-tag">backface-visibility</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="selector-tag">-webkit-perspective</span>: 1000;</span><br><span class="line"><span class="selector-tag">-moz-perspective</span>: 1000;</span><br><span class="line"><span class="selector-tag">-ms-perspective</span>: 1000;</span><br><span class="line"><span class="selector-tag">perspective</span>: 1000;</span><br></pre></td></tr></table></figure>
+<p><code>③ translate3d移动元素的动画流畅度会明显优于是用left属性</code></p>
+<p>PS: 3D变形会消耗更多的内存与功耗，应确实有性能问题时才去使用它，兼在权衡</p>
+<p><code>④ 尽可能的让动画元素不在文档流中，以减少重排</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">position</span>: <span class="selector-tag">fixed</span>;</span><br><span class="line"><span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;</span><br></pre></td></tr></table></figure>
+<p><code>⑤ 优化减少DOM 重排</code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zcmk123.github.io/2018/02/05/CSS3-3D动画/" data-id="cjd9jo5ea0000m4r128u4smla" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/03/CSS3选择器/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CSS3选择器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CSS3/" style="font-size: 10px;">CSS3</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/02/05/CSS3-3D动画/">CSS3 3D动画</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/03/CSS3选择器/">CSS3选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/02/CSS3-flex布局/">CSS3 flex布局</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/31/CSS3动画/">CSS3动画</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/31/搭建Hexo静态博客/">搭建Hexo静态博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      &copy; 2018 DoubleBird<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	  <span id="busuanzi_container_site_uv">
+		本站访客数<span id="busuanzi_value_site_uv"></span>人次
+	  </span>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
